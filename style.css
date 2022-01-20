@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100,300;700&display=swap');
+
+body {
+    display: flex;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    background: powderblue;
+}
+
+.review-card {
+    max-width: 30em;
+    min-height: 10em;
+    background: #fff;
+    padding: 2.5em;
+    box-shadow: 5px 5px 5px #1313131f;
+    border-radius: 4px;
+}
+
+.review-top {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.reviewer {
+    display: flex;
+    align-items: center;
+}
+
+.reviewer img {
+    width: 3em;
+    height: 3em;
+    border-radius: 50%;
+}
+
+.reviewer-text {
+    margin-left: 1em;
+    font-size: .9em;
+}
+
+.reviewer-text strong {
+    font-weight: 700;
+}
+
+.reviewer-text p {
+    margin: 0;
+}
+
+.reviewer-badge {
+    background: #3744CA;
+    color: #fff;
+    font-size: .8em;
+    padding: .2em .5em;
+    text-align: center;
+    max-width: 5em;
+    border-radius: 20px;
+}
+
+.review-main {
+    display: flex;
+    justify-content: center;
+    margin-top: 2em;
+}
+
+.review-main blockquote {
+    position: relative;
+    margin: 0;    
+}
+
+/* quote credits: https://jsfiddle.net/pz6kx0bw/ */
+
+.review-main blockquote h3:before { 
+    content: "\201C";
+    font-weight: bold;
+    font-size: 100px;
+    color:#E0E0E0;
+    position: absolute; 
+    top: -0.3em;
+    left: -0.7em; 
+    font-family: 'Georgia'; 
+}
+
+.review-main blockquote h3:after { 
+    content: "\201D";
+    font-weight: bold;
+    font-size: 100px;
+    color:#E0E0E0;
+    position: absolute; 
+    bottom: -1em;
+    right: 0;
+    font-family: 'Georgia'; 
+}
+
+.review-content {
+    max-width: 75%;
+    font-size: .8em;
+    margin: 0;
+} 
+
+.review-title {
+    color: #000000e6;
+    margin-bottom: 0;
+    font-weight: 700; 
+}
+
+.review-description {
+    color: #3d3d3d;
+    margin-top: 5px;
+    font-weight: 100; 
+}
